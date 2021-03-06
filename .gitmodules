@@ -1,0 +1,3 @@
+[submodule "airootfs/usr/local/share/gnome-shell/extensions/improvedosk@luebke.io"]
+	path = airootfs/usr/local/share/gnome-shell/extensions/improvedosk@luebke.io
+	url = https://github.com/SebastianLuebke/improved-osk-gnome-ext
