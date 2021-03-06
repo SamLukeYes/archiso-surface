@@ -1,0 +1,12 @@
+# remove from airootfs!
+[Trigger]
+Operation = Install
+Operation = Upgrade
+Type = Package
+Target = linux-surface
+
+[Action]
+Description = Renaming linux-surface to linux...
+When = PostTransaction
+Depends = linux-surface
+Exec = /usr/bin/sh -c 'mv -v /boot/vmlinuz-linux-surface /boot/vmlinuz-linux; mv -v /boot/initramfs-linux-surface.img /boot/initramfs-linux.img'

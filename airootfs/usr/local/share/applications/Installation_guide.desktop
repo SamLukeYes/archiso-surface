@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=Installation Guide
+Icon=system-software-install
+Exec=Installation_guide
+Terminal=false
+Type=Application

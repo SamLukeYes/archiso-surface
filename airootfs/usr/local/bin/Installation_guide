@@ -1,0 +1,5 @@
+#!/bin/sh
+#
+# SPDX-License-Identifier: GPL-3.0-or-later
+
+epiphany 'https://github.com/linux-surface/linux-surface/wiki/Installation-and-Setup#surface-kernel-installation' 'https://wiki.archlinux.org/index.php/Installation_guide'
