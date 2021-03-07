@@ -20,6 +20,7 @@ ethtool
 exfatprogs
 f2fs-tools
 fatresize
+file-roller
 fish
 fsarchiver
 gdm
@@ -27,6 +28,7 @@ gedit
 gnome-control-center
 gnome-disk-utility
 gnome-shell
+gnome-system-monitor
 gnome-terminal
 gnu-netcat
 gpart
@@ -34,6 +36,7 @@ gpm
 gptfdisk
 haveged
 hdparm
+iio-sensor-proxy
 intel-ucode
 iptsd
 ipw2100-fw
