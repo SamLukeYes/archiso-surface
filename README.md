@@ -5,6 +5,7 @@ Install Arch Linux or rescue your Linux installation with touchscreen, even if n
 This Live CD uses [iptsd](https://github.com/linux-surface/iptsd) for touchscreen support, and should work on any device that is supported by `iptsd`. For now, it is mainly tested on Surface Pro 6.
 
 ## Features
+- Kernel parameters: `copytoram=y` & `reboot=pci`
 - Comes with GNOME Shell and a few GNOME applications
 - [Improved Onscreen Keyboard](https://github.com/SebastianLuebke/improved-osk-gnome-ext) enabled by default
 - Auto screen rotation support
