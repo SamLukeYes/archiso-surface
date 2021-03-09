@@ -2,7 +2,7 @@
 Install Arch Linux or rescue your Linux installation with touchscreen, even if no physical keyboard or mouse is available.
 
 ## Supported Devices
-This Live CD uses [iptsd](https://github.com/linux-surface/iptsd) for touchscreen support, and should work on any device that is supported by `iptsd`. For now, it is mainly tested on Surface Pro 6.
+This Live CD uses [linux-surface](https://github.com/linux-surface/linux-surface) and [iptsd](https://github.com/linux-surface/iptsd) for touchscreen support. This should work on any device that is supported by `iptsd`. For now, it is mainly tested on Surface Pro 6.
 
 ## Features
 - Kernel parameters: `copytoram=y` & `reboot=pci`
