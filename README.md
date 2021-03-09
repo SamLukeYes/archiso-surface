@@ -8,6 +8,7 @@ This Live CD uses [iptsd](https://github.com/linux-surface/iptsd) for touchscree
 - Kernel parameters: `copytoram=y` & `reboot=pci`
 - Comes with GNOME Shell and a few GNOME applications
 - [Improved Onscreen Keyboard](https://github.com/SebastianLuebke/improved-osk-gnome-ext) enabled by default
+- Battery status display
 - Auto screen rotation support
 - Bootable with [Ventoy](https://ventoy.net)
 
