@@ -10,6 +10,7 @@ This Live CD uses [linux-surface](https://github.com/linux-surface/linux-surface
 - [Improved Onscreen Keyboard](https://github.com/SebastianLuebke/improved-osk-gnome-ext) enabled by default
 - Battery status display
 - Auto screen rotation support
+- `fish` as default shell
 - Bootable with [Ventoy](https://ventoy.net)
 
 ## Building the ISO
