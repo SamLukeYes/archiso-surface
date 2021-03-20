@@ -6,7 +6,6 @@ base
 bind-tools
 btrfs-progs
 clonezilla
-cloud-init
 crda
 darkhttpd
 ddrescue
@@ -27,6 +26,7 @@ gdm
 gedit
 gnome-control-center
 gnome-disk-utility
+gnome-keyring
 gnome-shell
 gnome-system-monitor
 gnome-terminal
@@ -41,10 +41,7 @@ intel-ucode
 iptsd
 ipw2100-fw
 ipw2200-fw
-irssi
 jfsutils
-kitty-terminfo
-lftp
 linux-surface
 linux-atm
 linux-firmware
@@ -53,7 +50,6 @@ lvm2
 man-db
 man-pages
 mdadm
-memtest86+
 mkinitcpio
 mkinitcpio-archiso
 mkinitcpio-nfs-utils
@@ -68,9 +64,7 @@ nmap
 noto-fonts-cjk
 ntfs-3g
 nvme-cli
-openconnect
 openssh
-openvpn
 partclone
 parted
 partimage
@@ -80,7 +74,6 @@ reflector
 reiserfsprogs
 rp-pppoe
 rsync
-rxvt-unicode-terminfo
 sdparm
 sg3_utils
 smartmontools
@@ -88,13 +81,11 @@ squashfs-tools
 syslinux
 tcpdump
 terminus-font
-termite-terminfo
 testdisk
 tmux
 udftools
 usb_modeswitch
 usbutils
-vpnc
 wpa_supplicant
 wvdial
 xfsprogs

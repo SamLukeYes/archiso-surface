@@ -24,10 +24,8 @@ For technical details, see [ArchWiki](https://wiki.archlinux.org/index.php/Archi
 ### Auto rotation doesn't work
 Lock the screen rotation, unlock it again, and see if it works now.
 ### Bluetooth menu disappears after turning off
-You'll need to start `bluetooth.service` again to re-enable bluetooth.
-### Cannot input Wi-Fi password
-Go to Wi-Fi Settings or use `nm-connection-editor` to edit connection and fill in the password manually. Alternatively, use `nmtui` to connect instead of GUI.
+You might need to restart `bluetooth.service`.
 ### Double click on Files doesn't work well with touchscreen
 Go to `Preferences` -> `Behavior`, and select `Single click to open items`.
 ### Onscreen Keyboard takes too much space on portrait screen
-Set its portrait height in Extensions.
+Set its portrait height in `Extensions`.
