@@ -16,9 +16,10 @@ This Live CD uses [linux-surface](https://github.com/linux-surface/linux-surface
 - Auto screen rotation support
 - `fish` as default shell
 - Symbols and CJK fonts support
-- Bootable with [Ventoy](https://ventoy.net)
+- Bootable with [Ventoy](https://ventoy.net) (See [below](https://github.com/SamLukeYes/archiso-surface#boot-with-ventoy))
 
 ## Getting started
+### Acquire the ISO
 You can download the ISO from [Releases](https://github.com/SamLukeYes/archiso-surface/releases), or build it with the following commands:
 ```
 $ git clone --recursive https://github.com/SamLukeYes/archiso-surface
@@ -26,17 +27,19 @@ $ git clone --recursive https://github.com/SamLukeYes/archiso-surface
 ```
 For technical details, see [ArchWiki](https://wiki.archlinux.org/index.php/Archiso#Build_the_ISO)
 
+### Creating live medium
+See [ArchWiki](https://wiki.archlinux.org/index.php/USB_flash_installation_medium)
+#### Boot with Ventoy
+This ISO is not actually [Ventoy Compatible](https://www.ventoy.net/en/compatible.html). In order to make it bootable with Ventoy, this live system keeps `syslinux` installed *(legacy boot is not an expected boot method for this ISO)*, and renames `linux-surface` image to `linux`, making Ventoy do proper hook as it does on a "standard" archiso. This is quite a dirty workaround. If you've figured out how to make an archiso in a Ventoy Compatible way, please open an issue or a pull request.
+
 ## Installation Guide
 For Arch Linux Installation Guide, please refer to [ArchWiki](https://wiki.archlinux.org/index.php/Installation_guide). Here are some additional notes.
-
-### Boot with Ventoy
-This ISO is not actually [Ventoy Compatible](https://www.ventoy.net/en/compatible.html). To make it bootable with Ventoy, as far as I can tell, I have to keep `syslinux` installed *(legacy boot is not an expected boot method for this ISO)*, and rename `linux-surface` image to `linux`, making Ventoy think this is a standard archiso and do proper hook. This is quite a dirty workaround. If you've figured out how to make an archiso in a Ventoy Compatible way, please open an issue or a pull request.
 
 ### Surface Kernel Installation
 You can do this after changing root into your target system, so that you don't have to boot into a system without `linux-surface` installed. Follow [this guide](https://github.com/linux-surface/linux-surface/wiki/Installation-and-Setup#surface-kernel-installation) to install all necessary packages for your touchscreen to function.
 
 ### Restore your system using Timeshift
-If you have existing snapshots created by Timeshift on your disk, then you can use the Gtk interface of Timeshift to restore your system. Simply skip the initial configuration, select a snapshot, and restore it.
+If you have existing snapshots created by Timeshift on your disk, you can use the Gtk interface of Timeshift to restore your system. Simply skip the initial configuration, select a snapshot, and restore it.
 
 ## Known Issues & Workarounds
 
