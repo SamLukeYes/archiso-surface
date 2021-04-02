@@ -7,7 +7,6 @@ bind-tools
 btrfs-progs
 clonezilla
 crda
-darkhttpd
 ddrescue
 diffutils
 dmraid
@@ -21,7 +20,6 @@ f2fs-tools
 fatresize
 file-roller
 fish
-fsarchiver
 gdm
 gedit
 gnome-control-center
@@ -32,7 +30,6 @@ gnome-terminal
 gnu-netcat
 gpart
 gpm
-gptfdisk
 haveged
 hdparm
 htop
@@ -43,7 +40,6 @@ ipw2100-fw
 ipw2200-fw
 jfsutils
 linux-surface
-linux-atm
 linux-firmware
 lsscsi
 lvm2
@@ -64,9 +60,6 @@ noto-fonts-cjk
 ntfs-3g
 nvme-cli
 openssh
-partclone
-parted
-partimage
 ppp
 pptpclient
 reflector

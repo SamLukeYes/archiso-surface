@@ -16,7 +16,7 @@ This live system uses [linux-surface](https://github.com/linux-surface/linux-sur
 - Auto screen rotation support
 - `fish` as default shell
 - Symbols and CJK fonts support
-- Bootable with [Ventoy](https://ventoy.net) (See [below](https://github.com/SamLukeYes/archiso-surface#boot-with-ventoy))
+- Bootable with [Ventoy](https://ventoy.net)
 
 ## Getting started
 ### Acquire the ISO
@@ -28,12 +28,13 @@ $ git clone --recursive https://github.com/SamLukeYes/archiso-surface
 For technical details, see [ArchWiki](https://wiki.archlinux.org/index.php/Archiso#Build_the_ISO)
 
 ### Creating live medium
-See [ArchWiki](https://wiki.archlinux.org/index.php/USB_flash_installation_medium). Please note that *this ISO is only designed for UEFI*. It might boot from BIOS, but entirely untested, and the legacy bootloader may be removed in the future. For the reason why I keep it for now, see the paragraph below.
-#### Boot with Ventoy
-Though I mainly test this ISO with Ventoy, it is not actually [Ventoy Compatible](https://www.ventoy.net/en/compatible.html). In order to make it work with Ventoy, this live system keeps `syslinux` installed as legacy bootloader, and renames `linux-surface` image to `linux`, making Ventoy do proper hook as it does on a "standard" archiso. This is quite a dirty workaround. If you've figured out how to make an archiso in a Ventoy Compatible way, please open an issue or a pull request.
+See [ArchWiki](https://wiki.archlinux.org/index.php/USB_flash_installation_medium). Please note that *this ISO is only designed for UEFI*. It might boot from BIOS, but entirely untested, and the legacy bootloader may be removed in the future. For the reason why I keep it for now, see the [known issue](https://github.com/SamLukeYes/archiso-surface#not-ventoy-compatible) below.
 
 ## Installation Guide
 For Arch Linux Installation Guide, please refer to [ArchWiki](https://wiki.archlinux.org/index.php/Installation_guide). Here are some additional notes.
+
+### Run Reflector Manually
+Since April, 2021, `reflector` in this ISO will not run automatically. You can choose to run it or not at your option.
 
 ### Surface Kernel Installation
 You can do this after changing root into your target system, so that you don't have to boot into a system without `linux-surface` installed. Follow [this guide](https://github.com/linux-surface/linux-surface/wiki/Installation-and-Setup#surface-kernel-installation) to install all necessary packages for your hardware to function (except for those on AUR).
@@ -42,7 +43,8 @@ You can do this after changing root into your target system, so that you don't h
 If you have existing snapshots created by Timeshift on your disk, you can use the Gtk interface of Timeshift to restore your system. Simply skip the initial configuration, select a snapshot, and restore it.
 
 ## Known Issues & Workarounds
-
+### Not Ventoy Compatible
+Though I mainly test this ISO with Ventoy, it is not actually [Ventoy Compatible](https://www.ventoy.net/en/compatible.html). In order to make it work with Ventoy, this live system keeps `syslinux` installed as legacy bootloader, and renames `linux-surface` image to `linux`, making Ventoy do proper hook as it does on a "standard" archiso. This is quite a dirty workaround. If you've figured out how to make an archiso in a Ventoy Compatible way, please open an issue or a pull request.
 ### Auto rotation doesn't work sometimes
 Lock the screen rotation, unlock it again, and see if it works now.
 ### Bluetooth menu disappears after turning off
