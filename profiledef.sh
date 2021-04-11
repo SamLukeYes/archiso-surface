@@ -4,7 +4,7 @@
 iso_name="archiso-surface"
 iso_label="ARCH_$(date +%Y%m)"
 iso_publisher="Sam L. Yes <https://github.com/SamLukeYes>"
-iso_application="Arch Linux Live/Rescue CD for Microsoft Surface"
+iso_application="Arch Linux Live/Rescue Image for Microsoft Surface"
 iso_version="$(date +%Y.%m.%d)"
 install_dir="arch"
 bootmodes=('bios.syslinux.mbr' 'bios.syslinux.eltorito' 'uefi-x64.systemd-boot.esp' 'uefi-x64.systemd-boot.eltorito')

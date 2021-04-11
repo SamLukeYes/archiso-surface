@@ -26,13 +26,13 @@ gnome-control-center
 gnome-disk-utility
 gnome-keyring
 gnome-shell
+gnome-system-monitor
 gnome-terminal
 gnu-netcat
 gpart
 gpm
 haveged
 hdparm
-htop
 iio-sensor-proxy
 intel-ucode
 iptsd
