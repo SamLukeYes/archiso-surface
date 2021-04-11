@@ -43,7 +43,7 @@ If you have existing snapshots created by Timeshift on your disk, you can use th
 
 ## Known Issues & Workarounds
 ### Improved Onscreen Keyboard is discontinued
-[Improved Onscreen Keyboard](https://github.com/SebastianLuebke/improved-osk-gnome-ext) is deprecated and archived by its owner. Before [these issues](https://github.com/SebastianLuebke/improved-osk-gnome-ext/issues/13) are solved in any fork, or an alternative onscreen keyboard at least as usable as Improved Onscreen Keyboard on GNOME 3.38, any future ISO releases (including monthly releases if any) will be marked as pre-release.
+[Improved Onscreen Keyboard](https://github.com/SebastianLuebke/improved-osk-gnome-ext) is deprecated and archived by its owner. Before [these issues](https://github.com/SebastianLuebke/improved-osk-gnome-ext/issues/13) are solved in any fork, or an alternative onscreen keyboard (at least as usable as Improved Onscreen Keyboard on GNOME 3.38) is used by this project, any future ISO releases (including monthly releases if any) will be marked as pre-release.
 ### Not Ventoy Compatible
 Though I mainly test this ISO with Ventoy, it is not actually [Ventoy Compatible](https://www.ventoy.net/en/compatible.html). In order to make it work with Ventoy, this live system keeps `syslinux` installed as legacy bootloader, and renames `linux-surface` image to `linux`, making Ventoy do proper hook as it does on a "standard" archiso. This is quite a dirty workaround. If you've figured out how to make an archiso in a Ventoy Compatible way, please open an issue or a pull request.
 ### Auto rotation doesn't work sometimes
