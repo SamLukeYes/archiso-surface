@@ -10,6 +10,7 @@ This live system uses [linux-surface](https://github.com/linux-surface/linux-sur
 ## Features
 - Copy squashfs to RAM at boot
 - GNOME Shell and a few GNOME applications
+- [Improved Onscreen Keyboard](https://github.com/SamLukeYes/improved-osk-gnome-ext)
 - Use `timeshift` to restore your system
 - Battery status display
 - Auto screen rotation support
@@ -42,15 +43,13 @@ Follow [this guide](https://github.com/linux-surface/linux-surface/wiki/Installa
 If you have existing snapshots created by Timeshift on your disk, you can use the Gtk interface of Timeshift to restore your system. Simply skip the initial configuration, select a snapshot, and restore it.
 
 ## Known Issues & Workarounds
-### Improved Onscreen Keyboard is discontinued
-[Improved Onscreen Keyboard](https://github.com/SebastianLuebke/improved-osk-gnome-ext) is deprecated and archived by its owner. Before [these issues](https://github.com/SebastianLuebke/improved-osk-gnome-ext/issues/13) are solved in any fork, or an alternative onscreen keyboard (at least as usable as Improved Onscreen Keyboard on GNOME 3.38) is used by this project, any future ISO releases (including monthly releases if any) will be marked as pre-release.
 ### Not Ventoy Compatible
 Though I mainly test this ISO with Ventoy, it is not actually [Ventoy Compatible](https://www.ventoy.net/en/compatible.html). In order to make it work with Ventoy, this live system keeps `syslinux` installed as legacy bootloader, and renames `linux-surface` image to `linux`, making Ventoy do proper hook as it does on a "standard" archiso. This is quite a dirty workaround. If you've figured out how to make an archiso in a Ventoy Compatible way, please open an issue or a pull request.
 ### Auto rotation doesn't work sometimes
 Lock the screen rotation, unlock it again, and see if it works now.
 ### Bluetooth menu disappears after turning off
 If you want to enable bluetooth again, try turning it on in `Settings`. If it doesn't work, restart `bluetooth.service`.
-### Double tapping on Files can hardly work
-Open `Files`, go to `Preferences` -> `Behavior`, and select `Single click to open items`.
-### Onscreen Keyboard takes too much space on portrait screen
-Set its portrait height in `Extensions`. For Surface Pro 6, 16% is recommended.
+### Onscreen keyboard can't pop up when a mouse is available
+This might be a new behavior of GNOME 40. If you need to use the OSK with a mouse, please enable it in Accessibility Settings.
+### Onscreen keyboard doesn't resize windows
+If you know how to solve this issue, please open a pull request [here](https://github.com/SamLukeYes/improved-osk-gnome-ext/pulls).
