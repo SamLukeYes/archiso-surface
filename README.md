@@ -37,7 +37,7 @@ For Arch Linux Installation Guide, please refer to [ArchWiki](https://wiki.archl
 Since April 2021, `reflector` in the live image will not run automatically. You can run it at your option.
 
 ### Make your touchscreen work in a new installation
-Follow [this guide](https://github.com/linux-surface/linux-surface/wiki/Installation-and-Setup#surface-kernel-installation) to install  necessary packages for your hardware to function. To make touchscreen actually usable in your new system, don't forget to set up [graphical user interface](https://wiki.archlinux.org/index.php/General_recommendations#Graphical_user_interface). You can install these packages in chroot, so that you don't have to boot into a system without touchscreen support.
+Follow [this guide](https://github.com/linux-surface/linux-surface/wiki/Installation-and-Setup#surface-kernel-installation) to install  necessary packages for your hardware to function. To make touchscreen actually usable in your new system, don't forget to set up [graphical user interface](https://wiki.archlinux.org/index.php/General_recommendations#Graphical_user_interface). You can do this in chroot, so that you don't have to boot into a system without touchscreen support.
 
 ### Restore your system using Timeshift
 If you have existing snapshots created by Timeshift on your disk, you can use the Gtk interface of Timeshift to restore your system. Simply skip the initial configuration, select a snapshot, and restore it.
@@ -45,8 +45,8 @@ If you have existing snapshots created by Timeshift on your disk, you can use th
 ## Known Issues & Workarounds
 ### Not Ventoy Compatible
 Though I mainly test this ISO with Ventoy, it is not actually [Ventoy Compatible](https://www.ventoy.net/en/compatible.html). In order to make it work with Ventoy, this live system keeps `syslinux` installed as legacy bootloader, and renames `linux-surface` image to `linux`, making Ventoy do proper hook as it does on a "standard" archiso. This is quite a dirty workaround. If you've figured out how to make an archiso in a Ventoy Compatible way, please open an issue or a pull request.
-### Auto rotation doesn't work sometimes
-Lock the screen rotation, unlock it again, and see if it works now.
+### Auto rotation doesn't work
+Since GNOME 40, automatic screen rotation cannot be enabled when a mouse is connected.
 ### Bluetooth menu disappears after turning off
 If you want to enable bluetooth again, try turning it on in `Settings`. If it doesn't work, restart `bluetooth.service`.
 ### Onscreen keyboard can't pop up when a mouse is available

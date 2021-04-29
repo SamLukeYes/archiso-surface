@@ -13,7 +13,7 @@ dmraid
 dosfstools
 edk2-shell
 efibootmgr
-epiphany
+eolie
 ethtool
 exfatprogs
 f2fs-tools
@@ -22,9 +22,10 @@ file-roller
 fish
 gdm
 gedit
-gnome-control-center
+gnome-control-center-nocheese
 gnome-disk-utility
 gnome-keyring
+gnome-screenshot
 gnome-shell
 gnome-system-monitor
 gnome-terminal
@@ -39,6 +40,7 @@ iptsd
 ipw2100-fw
 ipw2200-fw
 jfsutils
+libwacom-surface
 linux-surface
 linux-firmware
 lsscsi
