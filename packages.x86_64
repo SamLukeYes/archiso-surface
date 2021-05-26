@@ -62,6 +62,7 @@ noto-fonts-cjk
 ntfs-3g
 nvme-cli
 openssh
+power-profiles-daemon
 ppp
 pptpclient
 reflector
@@ -72,7 +73,6 @@ sdparm
 sg3_utils
 smartmontools
 squashfs-tools
-surface-control
 syslinux
 tcpdump
 terminus-font
