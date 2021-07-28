@@ -27,6 +27,7 @@ gnome-disk-utility
 gnome-keyring
 gnome-screenshot
 gnome-shell
+gnome-shell-extension-improvedosk-git
 gnome-system-monitor
 gnome-terminal
 gnu-netcat
@@ -34,6 +35,7 @@ gpart
 gpm
 haveged
 hdparm
+hw-probe
 iio-sensor-proxy
 intel-ucode
 iptsd
@@ -51,6 +53,7 @@ mdadm
 mkinitcpio
 mkinitcpio-archiso
 mkinitcpio-nfs-utils
+modemmanager
 mtools
 nautilus
 nbd
@@ -73,6 +76,7 @@ sdparm
 sg3_utils
 smartmontools
 squashfs-tools
+surface-ath10k-firmware-override
 syslinux
 tcpdump
 terminus-font
