@@ -1,16 +1,16 @@
-# Arch Linux Live/Rescue Image for Microsoft Surface
+# Arch Linux Live/Rescue Image for Microsoft Surface Tablets
 Install Arch Linux or rescue your Linux installation with touchscreen, even if no physical keyboard or mouse is available.
 
 ## Disclaimer
 This live image and all the files in this repository are distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the [GNU General Public License](https://github.com/SamLukeYes/archiso-surface/blob/main/LICENSE) for more details.
 
 ## Supported Devices
-This live system uses [linux-surface](https://github.com/linux-surface/linux-surface) and [iptsd](https://github.com/linux-surface/iptsd) for touchscreen support. This should work on any touchscreen device supported by `iptsd` or a generic kernel, but mainly focuses on the compatibility to Microsoft Surface. For now, it is tested on Surface Pro 6.
+This live system uses [linux-surface](https://github.com/linux-surface/linux-surface) and [iptsd](https://github.com/linux-surface/iptsd) for touchscreen support. This should work on any touchscreen device supported by `iptsd` or a generic kernel, but mainly focuses on the compatibility to Microsoft Surface tablets. For now, it is tested on Surface Pro 6.
 
 ## Features
 - Copy squashfs to RAM at boot
 - GNOME Shell and a few GNOME applications
-- [Improved Onscreen Keyboard](https://github.com/SamLukeYes/improved-osk-gnome-ext)
+- [Improved Onscreen Keyboard](https://github.com/nick-shmyrev/improved-osk-gnome-ext)
 - Use `timeshift` to restore your system
 - Battery status display
 - Auto screen rotation support
@@ -34,7 +34,7 @@ See [ArchWiki](https://wiki.archlinux.org/index.php/USB_flash_installation_mediu
 For Arch Linux Installation Guide, please refer to [ArchWiki](https://wiki.archlinux.org/index.php/Installation_guide). Here are some additional notes.
 
 ### Run Reflector Manually
-Since April 2021, `reflector` in the live image will not run automatically. You can run it at your option.
+Since April 2021, `reflector` in this live image will not run automatically. You can run it at your option.
 
 ### Make your touchscreen work in a new installation
 Follow [this guide](https://github.com/linux-surface/linux-surface/wiki/Installation-and-Setup#surface-kernel-installation) to install  necessary packages for your hardware to function. To make touchscreen actually usable in your new system, don't forget to set up [graphical user interface](https://wiki.archlinux.org/index.php/General_recommendations#Graphical_user_interface). You can do this in chroot, so that you don't have to boot into a system without touchscreen support.
@@ -52,4 +52,4 @@ If you want to enable bluetooth again, try turning it on in `Settings`. If it do
 ### Onscreen keyboard can't pop up when a mouse is available
 This might be a new behavior of GNOME 40. If you need to use the OSK with a mouse, please enable it in Accessibility Settings.
 ### Onscreen keyboard doesn't resize windows
-If you know how to solve this issue, please open a pull request [here](https://github.com/SamLukeYes/improved-osk-gnome-ext/pulls).
+See [this issue](https://github.com/nick-shmyrev/improved-osk-gnome-ext/issues/8).
