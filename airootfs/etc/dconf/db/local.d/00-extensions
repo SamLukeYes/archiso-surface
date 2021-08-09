@@ -1,3 +1,5 @@
+# Reference: https://help.gnome.org/admin/system-admin-guide/stable/extensions-enable.html.en
+
 [org/gnome/shell]
 # List all extensions that you want to have enabled for all users
-enabled-extensions=['improvedosk@nick-shmyrev.dev']
+enabled-extensions = ['improvedosk@nick-shmyrev.dev']
