@@ -2,4 +2,4 @@
 #
 # SPDX-License-Identifier: GPL-3.0-or-later
 
-eolie 'https://github.com/SamLukeYes/archiso-surface#installation-guide'
+xdg-open 'https://github.com/SamLukeYes/archiso-surface#installation-guide'
