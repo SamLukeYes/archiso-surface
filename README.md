@@ -51,5 +51,3 @@ If you want to enable bluetooth again, try turning it on in `Settings`. If it do
 This might be a new behavior of GNOME 40. If you need to use the OSK with a mouse, please enable it in Accessibility Settings.
 ### Onscreen keyboard doesn't resize windows
 See [this issue](https://github.com/nick-shmyrev/improved-osk-gnome-ext/issues/8).
-### System sound volume control unavailable
-Before August 2021, sound support is not available. Starting with the August release, you can control the master volume using `alsamixer`, which is added to favorite apps for convenience.
