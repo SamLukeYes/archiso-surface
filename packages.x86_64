@@ -79,6 +79,7 @@ sdparm
 sg3_utils
 smartmontools
 squashfs-tools
+sudo
 surface-ath10k-firmware-override
 surface-uefi-firmware-git
 syslinux

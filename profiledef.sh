@@ -12,6 +12,7 @@ arch="x86_64"
 pacman_conf="pacman.conf"
 airootfs_image_tool_options=('-comp' 'zstd')
 file_permissions=(
+  ["/etc/sudoers.d"]="0:0:0750"
   ["/etc/shadow"]="0:0:400"
   ["/etc/gshadow"]="0:0:0400"
   ["/home/live"]="1000:1000:750"
