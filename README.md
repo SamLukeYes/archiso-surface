@@ -33,8 +33,14 @@ See [ArchWiki](https://wiki.archlinux.org/index.php/USB_flash_installation_mediu
 ## Installation Guide
 For Arch Linux Installation Guide, please refer to [ArchWiki](https://wiki.archlinux.org/index.php/Installation_guide). Here are some additional notes.
 
+### Connecting to the Internet
+archiso-surface uses [NetworkManager](https://wiki.archlinux.org/title/NetworkManager)
+
 ### Run Reflector Manually
-Since April 2021, `reflector` in this live image will not run automatically. You can run it at your option.
+Since April 2021, [reflector](https://wiki.archlinux.org/title/Reflector) in archiso-surface will not run automatically. You can run it at your option.
+
+### Text Editor
+archiso-surface uses `gedit` instead of `nano`
 
 ### Make your touchscreen work in a new installation
 Follow [this guide](https://github.com/linux-surface/linux-surface/wiki/Installation-and-Setup#surface-kernel-installation) to install  necessary packages for your hardware to function. To make touchscreen actually usable in your new system, don't forget to set up [graphical user interface](https://wiki.archlinux.org/index.php/General_recommendations#Graphical_user_interface). You can do this in chroot, so that you don't have to boot into a system without touchscreen support.
