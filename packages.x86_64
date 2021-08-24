@@ -19,6 +19,7 @@ edk2-shell
 efibootmgr
 epiphany
 ethtool
+evince
 exfatprogs
 f2fs-tools
 fatresize
