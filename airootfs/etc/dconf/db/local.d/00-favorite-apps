@@ -1,4 +1,4 @@
 # Reference: https://help.gnome.org/admin/system-admin-guide/stable/desktop-favorite-applications.html.en
 
 [org/gnome/shell]
-favorite-apps = ['org.gnome.Screenshot.desktop', 'org.gnome.Nautilus.desktop', 'org.gnome.Epiphany.desktop', 'org.gnome.Terminal.desktop', 'htop.desktop', 'org.gnome.DiskUtility.desktop', 'timeshift-gtk.desktop']
+favorite-apps = ['org.gnome.Screenshot.desktop', 'org.gnome.Nautilus.desktop', 'org.gnome.Epiphany.desktop', 'org.gnome.Terminal.desktop', 'gnome-system-monitor.desktop', 'org.gnome.DiskUtility.desktop', 'timeshift-gtk.desktop']
